@@ -1,0 +1,161 @@
+html,body{
+  margin:0 auto;
+  max-width:1200px;
+  height:100%;
+}
+header {
+  background:black;
+  height:40px;
+  width:100%;
+  margin-top:2px;
+}
+.header{
+ width:80%;
+ height:100%;
+ margin:0 auto;
+ // border:1px dashed red;
+ // overflow:hidden;
+ position:relative;
+}
+h4{
+  color:white;
+  margin-top:0;
+  //vertical-align:middle; //2’、vertical-align是针对table元素，须将父元素设为table,子元素为table-cell,在垂直居中
+  Line-height：2;       ////2、设置标题垂直居中，最后通过line-height达到效果。知道父元素高度，设line-height与父元素等高即居中
+}
+.headerul{
+  margin-top:0;
+  display:inline-block;
+  //float:right;
+  position:absolute;    //1’、通过position加四边位置设定，比float好
+  top：0;
+  right:0;
+}
+.headerul li{
+  display:inline;
+  list-type:none;
+  padding-right:10px; 
+  //margin-top:0;
+}
+.s1{
+  background:green;
+  height:100px;
+  width:100%;
+  position:relative;
+}
+.s1 ul{
+  //float:right;
+  position:absolute;
+  right:20%;
+  top: 60%;
+  margin:0;   //3、ul存在margin默认，可以用*统一优化
+  padding:0;
+}
+.s1 ul li{
+  display:inline;
+  list-type:none;
+  padding-right:10px; 
+  padding-top:8px;
+  //text-decoration:none;
+   background:white;
+  //height:40px;
+
+}
+.s1 ul li a{
+  text-decoration:none;
+  align:center;
+  color:black;
+  font-family:New Roman;
+  padding:2px;
+   margin:1px auto
+}
+.s1 ulli:hover{
+  font-size:300%
+}
+.s2{
+  height:40px;
+  width:100%; 
+  border-bottom:1px solid gray;
+  position:relative;
+}
+.s2 ul{
+   margin:0;
+  padding:0;
+  position:absolute;
+  bottom:0;
+  left:15%;
+
+}
+.s2 ul li{
+  display:inline;
+  list-type:none;
+  //padding-right:10px; 
+  //text-decoration:none;
+  border:1px solid ;
+  //height:40px; 
+  padding-top:8px;
+  border-top-left-radius:16px 16px;  //4、不存在border-top-radius;只能针对每个角，不是每两个
+  border-top-right-radius:16px 16px;
+}
+.s2 ul li a{
+  text-decoration:none;           //5、  text-decoration针对有下划线的a，不是li
+  text-align:center;
+  color:black;
+  font-family:New Romans;
+   padding:8px;
+  //padding-top:5px;
+}
+.s2 ulli:hover{     //7、hover可用于任意元素表示获得鼠标光圈。这里设置a的hover，会一起变化，应该是冒泡事件原因。
+  background:gray;
+  //color:red;
+  //font-family:New Romans;
+  // padding:8px;
+  //padding-top:5px;
+}
+.s3{
+  width:80%;
+  //height:400px;
+  margin:0 auto;
+}
+.content1{
+  display:flex;
+
+}
+.content1 div{
+  border:1px solid gray;
+  //background:red;
+  height:150px;
+  //width:200px;
+  flex:1;
+  margin:2px;
+}
+.content2{
+display:flex;
+
+}
+.content2 div{
+  border:1px solid gray;
+//background:red;
+  height:150px;
+//width:200px;
+  flex:1;
+  margin:2px;
+}
+.content3{
+display:flex;
+
+}
+.content3 div{
+  border:1px solid gray;
+//background:red;
+  height:150px;
+//width:200px;
+  flex:1;
+  margin:2px;
+}
+footer{
+  background:black;
+  height:40px;
+  width:100%;
+//margin-top:2px; 
+}
